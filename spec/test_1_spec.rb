@@ -16,7 +16,6 @@ describe ApplicationController, type: :controller do
     end
 
     it "should return false where :ms_teams param has not been set" do
-      puts "described_class: #{described_class}"
       expect(@controller.some_action).to eq "Blah"
     end
   end
