@@ -10,9 +10,11 @@ The setup of the shell application just follows the rspec-rails
 To see the test failure under consideration you should run the two sample
 specs individually first, then run them consecutively after:
 
+```
 > bundle exec rspec spec/test_1_spec.rb # All PASS
 > bundle exec rspec spec/test_2_spec.rb # All PASS
 > bundle exec rspec spec/test_1_spec.rb spec/test_2_spec.rb # Last test FAIL
 > bundle exec rspec spec/test_2_spec.rb spec/test_1_spec.rb # All PASS
+```
 
 Please refer to the [blog article](https://vector-logic.com/blog/posts/what-the-spec) for a discussion on why this happens.
