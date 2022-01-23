@@ -15,7 +15,7 @@ describe ApplicationController, type: :controller do
       @controller = MockApplicationController.new
     end
 
-    it "should return false where :ms_teams param has not been set" do
+    it "should return expected String value" do
       expect(@controller.some_action).to eq "Blah"
     end
   end
